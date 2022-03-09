@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<html lang="en-us">
+    <head>
+        <title>Counter</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .button {
+                display: inline-block;
+                padding: 15px 25px;
+                font-size: 24px;
+                cursor: pointer;
+                text-align: center;
+                text-decoration: none;
+                outline: none;
+                color: #fff;
+                background-color: #15ade9;
+                border: none;
+                border-radius: 15px;
+                box-shadow: 0 9px #999;
+            }.button:hover {
+                background-color: #1177a0;
+            }.button:active {
+                background-color: #1177a0;
+                box-shadow: 0 5px #666;
+                transform: translateY(4px);
+            }
+
+            body {
+                background-color: cornflowerblue;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                text-align: center;
+            }
+
+            footer {padding: 10px;}
+        </style>
+    </head>
+
+    <body>
+        <h1>Counter App</h1>
+        <p>Version 1 - March 9, 2022</p>
+        <p id="ctr" style="background-color: white; font-size: 90px;">0</p>
+        <p>Keybinds: <b>I</b>ncrement, <b>D</b>ecrement, <b>S</b>ave, <b>L</b>oad, <b>C</b>lear</p>
+        <p id="msg">Actions will be shown here<p>
+        <button onclick="incr();" class="button">Increment</button>
+        <button onclick="decr();" class="button">Decrement</button>
+        <button onclick="save();" class="button">Save</button>
+        <button onclick="load();" class="button">Load</button>
+        <button onclick="clr();"  class="button">Clear</button>
+
+        <footer><p>Simple counter app inspired by the Flutter demo.</p></footer>
+        <script src="ctr.js"></script>
+    </body>
+
+</html>

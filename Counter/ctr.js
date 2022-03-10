@@ -32,7 +32,7 @@ function clr() {
 };
 // Keybinds
 document.onkeydown = function(e) {
-    switch (e.key) {
+    switch (e.key.toLowerCase()) {
         case "s": save(); break; // S to save
         case "l": load(); break; // L to load
         case "c": clr();  break; // C to clear

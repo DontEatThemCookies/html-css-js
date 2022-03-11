@@ -26,5 +26,10 @@ Requirements:
 
 Instructions:
 * Open ctr.html in a browser. Ensure ctr.js is in the same directory as the html file.
+### Changelog
+* v1.1 \[03/11/2022\]
+  * Data integrity added - localStorage value resets to zero if an invalid value is detected
+* v1.0 \[03/09/2022\]
+  * Initial release 
 ***
 
